@@ -20,7 +20,7 @@ bool Parser::isCorrect(char command)
     return false;
 }
 
-std::pair<byte, sint> Parser::getEqualCommand(std::string::iterator &c, std::string::iterator & end)
+std::pair<byte, sint> Parser::getEqualCommand( std::string::iterator  &c, std::string::iterator & end)
 {
     byte com = 0;
     sint k = 0;
@@ -65,7 +65,7 @@ std::pair<byte, sint> Parser::getEqualCommand(std::string::iterator &c, std::str
     return std::make_pair(com, k);
 }
 
-std::vector<std::pair<byte, sint>> Parser::parse(std::string &code)
+std::vector<std::pair<byte, sint>> Parser::parse( std::string &code)
 {
     std::vector<std::pair<byte, sint>> commands;
 
